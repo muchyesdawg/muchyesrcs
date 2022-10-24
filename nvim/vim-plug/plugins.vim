@@ -8,7 +8,8 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'cocopon/iceberg.vim'
-    Plug 'aurieh/discord.nvim'
+    Plug 'ap/vim-buftabline'
+    Plug 'flazz/vim-colorschemes'
     Plug 'vimsence/vimsence'
     Plug 'joshdick/onedark.vim'
     Plug 'sainnhe/gruvbox-material'
