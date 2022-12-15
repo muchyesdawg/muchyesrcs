@@ -9,7 +9,9 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'cocopon/iceberg.vim'
     Plug 'ap/vim-buftabline'
+    Plug 'lambdalisue/nerdfont.vim'
     Plug 'flazz/vim-colorschemes'
+    Plug 'norcalli/nvim-colorizer.lua'
     Plug 'vimsence/vimsence'
     Plug 'joshdick/onedark.vim'
     Plug 'sainnhe/gruvbox-material'
@@ -33,7 +35,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'prabirshrestha/vim-lsp'
     Plug 'williamboman/nvim-lsp-installer'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'mhinz/vim-startify'
     " Use release branch (recommend)
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'dracula/vim', { 'as': 'dracula' }
