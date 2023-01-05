@@ -15,6 +15,7 @@ alias editrc="nvim ~/.zshrc"
 alias reshot="shutdown -r 0"
 alias shot="shutdown -h 0"
 alias shit="shutdown -h 0"
+alias sleep="systemctl suspend"
 alias reshit="shutdown -r 0"
 alias cdconf="cd ~/.config"
 alias cdcpo="cd ~/code/theTenTowers;source ~/.zshcompile"
@@ -35,5 +36,12 @@ alias compMode="source ~/.zshcompile"
 alias mode="echo normal mode"
 alias rofi="rofi -show run"
 alias cdc="cd ~/code"
+alias cdt="cd ~/code/test;cle"
+unset   TEST
+unset   CP
+unset   RC
+export  TEST=~/code/test
+export  CP=~/code/theTenTowers
+export  RC=~/code/muchyesrcs
 eval $(thefuck --alias)
 cle
