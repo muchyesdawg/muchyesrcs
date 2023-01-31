@@ -6,4 +6,5 @@ set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 autocmd VimEnter * NERDTree
-colorscheme deus
+let g:float_preview#docked=1
+colorscheme dracula
