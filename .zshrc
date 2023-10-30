@@ -2,7 +2,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias cl="clear"
-alias nproj="mkdir src bin db src/db; touch makefile src/main.cpp";
+alias nproj="mkdir src bin db src/db; touch makefile src/main.cpp"
 alias adblock="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
 alias gch="git checkout"
 alias music="yt-dlp -x --audio-format mp3"
@@ -17,7 +17,7 @@ alias mkpkg="makepkg -sirc"
 alias srcdatshi="source ~/.zshrc;"
 alias gdiffs="rm log.md;git diff --staged > log.md;nvim log.md"
 alias gdiff="rm log.md;git diff > log.md;nvim log.md"
-alias editrc="nvim ~/.zshrc;srcdatshi"
+alias editrc="nvim ~/code/muchyesrcs/.zshrc;srcdatshi"
 alias reshot="shutdown -r 0"
 alias shot="shutdown -h 0"
 alias shit="shutdown -h 0"
