@@ -1,59 +1,117 @@
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias cl="clear"
-alias nproj="mkdir src bin db src/db; touch makefile src/main.cpp"
-alias adblock="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
-alias gch="git checkout"
-alias music="yt-dlp -x --audio-format mp3"
-alias cdg="cd ~/glib"
-alias cdt2="cd ~/code/test"
-alias lazygac="git add .; git commit -m \"idk\"; git push"
-alias cdn="cd ~/notes"
-alias l="ls -ll --color"
-alias clock="cl;tty-clock -c"
-alias ls="ls --color -a"
-alias cmakeupdate="cmake -B . -S ../src"
-alias mkpkg="makepkg -sirc"
-alias srcdatshi="source ~/.zshrc;"
-alias gdiffs="rm log.md;git diff --staged > log.md;nvim log.md"
-alias gdiff="rm log.md;git diff > log.md;nvim log.md"
-alias editrc="nvim ~/code/muchyesrcs/.zshrc;srcdatshi"
-alias reshot="shutdown -r 0"
-alias shot="shutdown -h 0"
-alias shit="shutdown -h 0"
-alias sleep="systemctl suspend"
-alias reshit="shutdown -r 0"
-alias cdconf="cd ~/.config"
-alias cdcpo="cd ~/code/theTenTowers"
-alias cdcpod="cd ~/code/theTenTowers"
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(/usr/local/bin/brew shellenv)"
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 alias q="exit"
-alias clc="clear;make; ./bin/e; clear"
-alias clcd="clear;make; ./bin/e"
-alias print_colors="sh ~/scripts/print_colors.sh"
-alias quit="exit"
-alias gc="git clone"
-alias cdcp="cd ~/code/theTenTowers/src;"
-alias gac="git add .; git commit -m"
-alias cgac="cl;git add .; git commit -m"
+alias cdconf="cd ~/.config"
+alias cp="cp -r"
 alias rm="rm -rf"
-alias gp="git push"
-alias cdsp="cd ~/code/taskManager"
-source "$HOME/.zsh/spaceship/spaceship.zsh"
-alias cdcpt="cd ~/code/test/src"
-alias mode="echo normal mode"
-alias rofi="rofi -show run"
+alias cdn="cd ~/code/lnotes/;source .notesrc"
+alias cdt="cd ~/code/test/"
+alias cdcp="cd ~/code/gunpeyCpp/funcCpp; nvim"
+alias cmakeupdate="cmake -B . -S ../src "
 alias cdc="cd ~/code"
-alias cdt="cd ~/code/globaltk;"
-alias eCode="echo $?"
-unset   TEST
-unset   CP
-unset   RC
-unset   CONF
-unset   NCONF
-export  CONF=~/.config
-export  NCONF=~/.config/nvim
-export  TEST=~/code/globaltk
-export  CP=~/code/theTenTowers
-export  RC=~/code/muchyesrcs
-eval $(thefuck --alias)
+export PERSLIBS="~/libs"
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+alias clc="clear;sh compile.sh"
+alias clm="clear;make;./gunpeyTest"
+alias make="/usr/local/Cellar/make/4.4.1/libexec/gnubin/make"
+alias cl="clear;"
+alias edit="sh open.sh"
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias editrc="nvim ~/.zshrc;source ~/.zshrc"
+export PATH="/usr/local/texlive/2023basic/bin/universal-darwin:$PATH"
+alias music="youtube-dl -x --audio-format mp3 --no-playlist"

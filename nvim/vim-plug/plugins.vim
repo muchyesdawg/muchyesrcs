@@ -7,11 +7,17 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+    Plug 'maxmx03/fluoromachine.nvim'
     Plug 'cocopon/iceberg.vim'
     Plug 'ap/vim-buftabline'
     Plug 'lambdalisue/nerdfont.vim'
+    Plug 'bfrg/vim-cpp-modern'
+    Plug 'catppuccin/nvim'
+    Plug 'lervag/vimtex'
+    Plug 'Djancyp/better-comments.nvim'
+    Plug 'rebelot/kanagawa.nvim'
+    Plug '4513echo/vim-colors-hatsunemiku'
     Plug 'mcchrish/zenbones.nvim'
-    Plug 'kjakapat/eva-theme'
     Plug 'ncm2/float-preview.nvim'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'vimsence/vimsence'
