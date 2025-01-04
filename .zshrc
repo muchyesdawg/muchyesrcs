@@ -2,6 +2,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias cl="clear"
+alias hx="helix"
+alias update="sudo pacman -Syu"
 alias nproj="mkdir src bin db src/db; touch makefile src/main.cpp"
 alias adblock="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
 alias gch="git checkout"
@@ -43,9 +45,10 @@ source "$HOME/.zsh/spaceship/spaceship.zsh"
 alias cdcpt="cd ~/code/test/src"
 alias mode="echo normal mode"
 alias rofi="rofi -show run"
-alias cdc="cd ~/code"
+alias cdc="cd ~/code/gunpey/;nvim"
 alias cdt="cd ~/code/globaltk;"
 alias eCode="echo $?"
+alias tree="tree -a"
 unset   TEST
 unset   CP
 unset   RC
