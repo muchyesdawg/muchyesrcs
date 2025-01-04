@@ -5,7 +5,7 @@ alias cl="clear"
 alias hx="helix"
 alias update="sudo pacman -Syu"
 alias nproj="mkdir src bin db src/db; touch makefile src/main.cpp"
-alias adblock="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
+alias cp="cp -r"
 alias gch="git checkout"
 alias music="yt-dlp -x --audio-format mp3"
 alias cdg="cd ~/glib"
@@ -40,13 +40,8 @@ alias gac="git add .; git commit -m"
 alias cgac="cl;git add .; git commit -m"
 alias rm="rm -rf"
 alias gp="git push"
-alias cdsp="cd ~/code/taskManager"
 source "$HOME/.zsh/spaceship/spaceship.zsh"
 alias cdcpt="cd ~/code/test/src"
-alias mode="echo normal mode"
-alias rofi="rofi -show run"
-alias cdc="cd ~/code/gunpey/;nvim"
-alias cdt="cd ~/code/globaltk;"
 alias eCode="echo $?"
 alias tree="tree -a"
 unset   TEST
@@ -56,7 +51,5 @@ unset   CONF
 unset   NCONF
 export  CONF=~/.config
 export  NCONF=~/.config/nvim
-export  TEST=~/code/globaltk
-export  CP=~/code/theTenTowers
 export  RC=~/code/muchyesrcs
 eval $(thefuck --alias)
